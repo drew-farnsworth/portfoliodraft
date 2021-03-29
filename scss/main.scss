@@ -1,0 +1,356 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js");
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
+@import "../node_modules/owl.carousel/src/scss/owl.carousel.scss";
+
+@import "../node_modules/owl.carousel/src/scss/owl.theme.default.scss";
+
+//variables
+$main-color:#00CED1;
+$text-color:#fff;
+$color2:#000;
+$color3: #696969;
+
+*{
+    box-sizing: border-box;
+}
+.title{
+    h1{
+        font-weight: bold;
+    }
+    p{
+        color: $color2;
+    }
+    color: $text-color;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+
+body{
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+header{
+    padding: 20px;
+    width:100%;
+    position: absolute;
+    background-color: $main-color;
+    z-index: 10;
+}
+
+.header-grid{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.logo{
+    padding-right: 200px;
+    color: $text-color;
+    font-weight: bold;
+    font-size: 2em;
+    margin: auto;
+    text-align: center;
+}
+
+nav{
+    li{
+        list-style: none;
+        padding: 1em 0;
+    }
+    ul{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: space-between;
+        text-align: center;
+    }
+    a{
+        padding: 0px 20px;
+        background-color: $color3;
+        color: $text-color;
+        text-decoration: none;
+        font-size: 25px;
+        box-shadow: 5px 5px 0px rgba(0,0,0,0.28);
+    }
+}
+
+nav a:hover{
+    text-decoration: none;
+    background-color: $text-color;
+    color: $color2;
+}
+
+.banner{
+    background: {
+        image: url(../images/sunset.jpg);
+        size: cover;
+        position: center;
+    };
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.banner-content{
+    h1{
+        color: $text-color;
+        font-weight: bold;
+    }
+    font-size: 20px;
+    width: 40%;
+    color: $color2;
+    margin: auto;
+    padding-top: 42vh;
+    position: relative;
+    text-align: center;
+}
+
+.btn{
+    background-color: $main-color;
+    border-radius: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 0.8;
+    min-width: 150px;
+    padding: 20px 15px;
+    border-radius: 30px;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover{
+    text-decoration: none;
+    background-color: $text-color;
+    color: $color2;
+}
+
+
+
+main{
+    background-color: $main-color;
+    color: $color2;
+    font-size: 20px;
+}
+
+main h2{
+    color: $text-color;
+    font-weight: bold;
+}
+
+.main-grid{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+
+}
+
+.section-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sideright{
+    padding: 20px;
+    background-color: $color3;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.28);
+}
+
+.sideleft{
+    padding: 20px;
+    background-color: $color3;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.28);
+}
+
+.portfolio{
+    background-color: $color3;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.28);
+    padding: 20px;
+    padding-bottom: 25px;
+    text-align: center;
+    .img{
+        padding-top: 20px;
+        width: 250px;
+        height: 280px;
+        margin: 0 auto;
+        img{
+            width: 100%
+        }
+    }
+    .carousel-content h2{
+        color: $text-color;
+        padding-top: 130px;
+    }
+}
+
+.portfolio2{
+    background-color: $color3;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.28);
+    padding: 20px;
+    text-align: center;
+    .img{
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        img{
+            width: 100%
+        }
+    }
+    .carousel-content h2{
+        color: $text-color;
+        padding-top: 130px;
+    }
+}
+
+.portfolio3{
+    background-color: $color3;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.28);
+    padding: 20px;
+    text-align: center;
+    .img{
+        padding-top: 20px;
+        width: 350px;
+        height: 310px;
+        margin: 0 auto;
+        img{
+            width: 100%
+        }
+    }
+    .carousel-content h2{
+        color: $text-color;
+    }
+}
+
+.portfolio4{
+    background-color: $color3;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.28);
+    padding: 20px;
+    text-align: center;
+    .img{
+        padding-top: 20px;
+        width: 350px;
+        height: 310px;
+        margin: 0 auto;
+        img{
+            width: 100%
+        }
+    }
+    .carousel-content h2{
+        color: $text-color;
+        padding-bottom: 20px;
+    }
+    .carousel-content p{
+        padding-bottom: 45px;
+    }
+
+}
+
+.owl-dot{
+    outline: none !important;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    border: none;
+}
+.card img{
+    width: 100%;
+    border: none;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.28);
+}
+
+.card a img:hover{
+    filter: saturate(20%);
+    cursor: pointer;
+}
+
+.soccerball{
+    .img{
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        animation: bounce 5s infinite;
+        img{
+            width: 100%
+        }
+    }
+}
+
+.contactform{
+    display: block;
+    text-align: center;
+}
+
+form{
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    background-color: $color3;
+    color: $text-color;
+    box-shadow: 5px 5px 0px rgba(0,0,0,0.28);
+    max-width: 300px;
+    text-align: left;
+}
+
+label{
+    position: left;
+}
+
+input{
+    border: solid 1px $color2;
+}
+
+input[type="submit"] {
+    background-color: $main-color;
+    border-radius: 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 0.8;
+    min-width: 150px;
+    padding: 20px 15px;
+    border-radius: 30px;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+input[type="submit"]:active {
+    text-decoration: none;
+    background-color: $text-color;
+    color: $color2;
+}
+
+footer{
+    padding-top: 15px;
+    text-align: center;
+    background-color: $color3;
+    color: $text-color;
+}
+
+.social i{
+    color: $text-color;
+    width: 60px;
+    font-size: 3em;
+    cursor: pointer;
+    padding: 2px;
+}
+
+
+
+
+
+
+
+
